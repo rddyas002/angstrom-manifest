@@ -16,7 +16,7 @@
   </project>
 
   <project remote="yocto" name="git/poky" path="poky-pyro"/>
-  <project remote="yocto" name="git/meta-ti" path="layers/meta-ti"/>
+  <project remote="yocto" name="git/meta-ti" path="layers/meta-ti"/ revision="morty">
 <!--
   <project remote="charon" name="fsw/meta-leon" path="layers/meta-leon" revision="yocto2.3"/>
   <project remote="charon" name="fsw/meta-spaceteq" path="layers/meta-spaceteq" revision="yocto2.3"/>
