@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <default revision="pyro" sync-j="4"/>
+  <default revision="sumo" sync-j="4"/>
 
   <remote fetch="https://github.com" name="github"/>
   <remote fetch="https://charon/gitblit/r/" name="charon"/>
   <remote fetch="https://git.yoctoproject.org/" name="yocto"/>
 
-  <project remote="github" name="openembedded/bitbake" path="bitbake" revision="1.34"/>
+  <project remote="github" name="openembedded/bitbake" path="bitbake" revision="1.38"/>
 
   <project remote="github" name="openembedded/openembedded-core" path="layers/openembedded-core"/>
   <project remote="github" name="openembedded/meta-openembedded" path="layers/meta-openembedded"/>
-
-  <project remote="github" name="Angstrom-distribution/meta-angstrom" path="layers/meta-angstrom" revision="angstrom-v2017.06-yocto2.3">
+  <project remote="yocto" name="git/meta-ti" path="layers/meta-ti"/ revision="rocko">
+  
+  <project remote="github" name="Angstrom-distribution/meta-angstrom" path="layers/meta-angstrom" revision="angstrom-v2018.06-sumo">
     <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
 
-  <project remote="yocto" name="git/poky" path="poky-pyro"/>
-  <project remote="yocto" name="git/meta-ti" path="layers/meta-ti"/ revision="morty">
-<!--
-  <project remote="charon" name="fsw/meta-leon" path="layers/meta-leon" revision="yocto2.3"/>
-  <project remote="charon" name="fsw/meta-spaceteq" path="layers/meta-spaceteq" revision="yocto2.3"/>
--->
+  <project remote="github" name="rddyas002/meta-bbb" path="layers/meta-bbb"/>
 </manifest>
